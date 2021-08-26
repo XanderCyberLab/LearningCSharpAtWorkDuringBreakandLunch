@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LearningCSharpAtWorkDuringBreakandLunch
 {
-    class Program : InputandOutput
+    class Program : Files
     {
         public static void Main(string[] args)
         {
-            Keystrokes();
+            FilesGet();
         }
 
 
