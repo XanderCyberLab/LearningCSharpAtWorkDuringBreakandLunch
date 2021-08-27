@@ -16,6 +16,7 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
             { 
                 File.Create(path);
             }
+
             FileStream fs = File.Open(path, FileMode.Append);
             byte[] info = new UTF8Encoding(true).GetBytes("Hello World ");
             fs.Write(info, 0, info.Length);
