@@ -10,7 +10,7 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
     {
         public static void Main(string[] args)
         {
-            Keystrokes();
+            BackgroundColorChange();
         }
 
 
