@@ -14,39 +14,61 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
             int x = Console.Read();
             System.Diagnostics.Debug.WriteLine(Convert.ToChar(x));//Convert.ToChar(x) convert key press to actual key
         }
-        public static void BackgroundColorChange()
+        public static void UserNumericInput()
         {
-            Console.WriteLine("r = red, b = blue, g = green, w white");
-            int x = Console.Read();
-            char userInput = Convert.ToChar(x);
-
-            while (userInput != 'z') 
+            Console.WriteLine("Please enter a number");
+            do
             {
-                switch(userInput)
+                string userInput = Console.ReadLine();
+                int number;
+
+                if (!int.TryParse(userInput, out number))
                 {
-                    case 'g':
-                        Console.BackgroundColor = ConsoleColor.Green;
-                        break;
-                    case 'r':
-                        Console.BackgroundColor = ConsoleColor.Red;
-                        break;
-                    case 'b':
-                        Console.BackgroundColor = ConsoleColor.Blue;
-                        break;
-                    case 'w':
-                        Console.BackgroundColor = ConsoleColor.White;
-                        break;
-                    default:
-                        Console.WriteLine("Wrong Choice");
-                        break;
-
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("You entered a wrong key");
+                    Console.ResetColor();
+                    Console.WriteLine("Please enter a number");
                 }
-                Console.Clear();
-                Console.WriteLine("r = red, b = blue, g = green, w white");
-                x = Console.Read();
-                userInput = Convert.ToChar(x);
+                else
+                {
+                    Console.WriteLine("Thanks for your number");    
+                }
 
-            }
+            } while (true);
         }
+    }
+}
+public static void BackgroundColorChange()
+{
+    Console.WriteLine("r = red, b = blue, g = green, w white");
+    int x = Console.Read();
+    char userInput = Convert.ToChar(x);
+
+    while (userInput != 'z')
+    {
+        switch (userInput)
+        {
+            case 'g':
+                Console.BackgroundColor = ConsoleColor.Green;
+                break;
+            case 'r':
+                Console.BackgroundColor = ConsoleColor.Red;
+                break;
+            case 'b':
+                Console.BackgroundColor = ConsoleColor.Blue;
+                break;
+            case 'w':
+                Console.BackgroundColor = ConsoleColor.White;
+                break;
+            default:
+                Console.WriteLine("Wrong Choice");
+                break;
+
+        }
+        Console.Clear();
+        Console.WriteLine("r = red, b = blue, g = green, w white");
+        x = Console.Read();
+        userInput = Convert.ToChar(x);
+
     }
 }
