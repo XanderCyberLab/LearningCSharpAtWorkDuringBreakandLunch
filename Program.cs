@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
 namespace LearningCSharpAtWorkDuringBreakandLunch
 {
-    class Program : Files
+    class Program : Properties
+
     {
+         
+
         public static void Main(string[] args)
         {
-            FilesGet();
+
+            PropertiesMethod();
+
+
+
         }
 
 
