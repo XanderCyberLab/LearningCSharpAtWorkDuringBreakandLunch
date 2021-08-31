@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace LearningCSharpAtWorkDuringBreakandLunch
 {
-    class Program : Properties
+    class Program 
 
     {
-         
 
+      
         public static void Main(string[] args)
         {
-
-            PropertiesMethod();
-
-
+            Console.WriteLine("Enter first digit?");
+            string firstNum = Console.ReadLine();
+            Console.WriteLine("Enter second digit?");
+            string secondNum = Console.ReadLine();
+            Console.WriteLine
 
         }
 
