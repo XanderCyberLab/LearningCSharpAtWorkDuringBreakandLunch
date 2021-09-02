@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace LearningCSharpAtWorkDuringBreakandLunch
 {
-    class Interfaces : IExample
+    class Interfaces : IExample, ISecondExample
     {
-        public static void Main(string[] args)
+        public static void Mainsub(string[] args)
         {
-
+            Debug.WriteLine("Test");
         }
 
         public void Example()
         {
             System.Diagnostics.Debug.WriteLine("Hello World");
         }
-        public int Exaxmple2()
+        public int Example2()
         {
             return 1;
         }
@@ -28,12 +29,16 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
 
 
     }
-        interface IExample
-        {
-            void Example();
-            int Exaxmple2();
-            string Example3(string string1, string string2);
-        }
-
+    interface IExample
+    {
+        void Example();
+        int Example2();
+        string Example3(string string1, string string2);
     }
+    interface ISecondExample
+    {
+    
+    }
+
+
 }
