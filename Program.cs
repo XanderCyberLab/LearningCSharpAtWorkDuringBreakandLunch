@@ -38,7 +38,7 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
             System.Diagnostics.Debug.WriteLine(message);
         }
       
-        public static void Main(string[] args)
+        public static void Mainsub(string[] args)
         {
             MakeDinner();
   
