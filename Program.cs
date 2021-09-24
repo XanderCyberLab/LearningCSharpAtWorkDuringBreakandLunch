@@ -7,7 +7,7 @@ using System.Diagnostics;
 
 namespace LearningCSharpAtWorkDuringBreakandLunch
 {
-    class Program 
+    class Program
 
     {
         static void Printmessage(string message = "Hello World")
@@ -15,15 +15,11 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
             System.Diagnostics.Debug.WriteLine(message);
         }
       
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
-           
-  
-                
-
-            Printmessage();
-            //Printmessage("Hello Texas");
-
+            
+            //Printmessage();
+            //Printmessage("Hello Texas");      
         }
 
 
