@@ -12,7 +12,7 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
         //string[] strings = new string[] { "a", "b", "c" }; // Create a array with size of array
         public static int[] array = new int[] { 1, 2, 3 };
 
-        public static void Main(string[] args)
+        public static void MainArrays(string[] args)
         {
             array[0] = 5; // To change array 0 to 5
             //Debug.WriteLine(array.Length); // Returns size of array
