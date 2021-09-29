@@ -12,9 +12,9 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
         private static void Main(string[] args)
         {
             //Question 1
-            //Debug.WriteLine(SumTwoIntegersTripleIfSameValues(1, 2));
-            //Debug.WriteLine(SumTwoIntegersTripleIfSameValues(3, 2));
-            //Debug.WriteLine(SumTwoIntegersTripleIfSameValues(2, 2));
+            Debug.WriteLine(SumTwoPractice(10, 20));
+            Debug.WriteLine(SumTwoPractice(24, 26));
+            Debug.WriteLine(SumTwoPractice(20, 20));
 
             //Question 2
             //Debug.WriteLine(AbsoluteDifferenceBetweenTwoValues(53));
@@ -99,6 +99,22 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
             int c = 30;
 
             return (a == c) || (b == c) || (a + b == c);        
+        }
+
+        public static int SumTwoPractice(int a, int b)
+        {
+            /*
+             * Question 1
+            Write a C# Sharp program to compute the sum of the two given integer values. If the two values are the same, 
+            then return triple their sum. 
+            Sample Input:
+             */
+            return a == b ? (a + b) * 3 : a + b;
+            //if(a == b)
+            //{
+            //    return (a + b) * 3;
+            //}
+            //return a + b;
         }
     }
 }
