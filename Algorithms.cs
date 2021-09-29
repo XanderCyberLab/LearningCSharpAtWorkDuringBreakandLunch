@@ -9,12 +9,15 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
 {
     class Algorithms
     {
+        static int a = 30, b = 25; //Scope through out the Algorithms Class
+       
+  
         private static void Main(string[] args)
         {
             //Question 1
-            Debug.WriteLine(SumTwoPractice(10, 20));
-            Debug.WriteLine(SumTwoPractice(24, 26));
-            Debug.WriteLine(SumTwoPractice(20, 20));
+            //Debug.WriteLine(SumTwoPractice(10, 20));
+            //Debug.WriteLine(SumTwoPractice(24, 26));
+            //Debug.WriteLine(SumTwoPractice(20, 20));
 
             //Question 2
             //Debug.WriteLine(AbsoluteDifferenceBetweenTwoValues(53));
@@ -27,9 +30,33 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
             //Debug.WriteLine(CheckTwoIntegersIfReturnTrueIfEqualsOrSumsToThirty(20, 30));
             //Debug.WriteLine(CheckTwoIntegersIfReturnTrueIfEqualsOrSumsToThirty(20, 25));
 
+            //Using Void and Calling from Inside / outside the Function  / Scope Methods
+            var sum = Add2(10, 5); // Call Method from Outside Function
+            Debug.WriteLine(sum);
+
+            Add(10, 10); // Call Method from Inside Function
+
+            var sub = Sub(a, b); // Call Variables from outside of Function, From the Class
+            Debug.WriteLine(sub);
+            
+        }
+        public static int Sub(int a, int b)
+        {
+            return a - b;
         }
 
 
+
+        public static void Add(int a, int b) // Call Method Inside
+        {
+            int sum = a + b;
+            Debug.WriteLine(sum);
+        }
+        public static int Add2(int a, int b) // Return Method to be used Outside 
+        {
+            int sum = a + b;
+            return sum;
+        }
         public static int SumTwoIntegersTripleIfSameValues(int a, int b)
         {
             /* Question 1
