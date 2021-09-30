@@ -31,13 +31,14 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
             //Debug.WriteLine(CheckTwoIntegersIfReturnTrueIfEqualsOrSumsToThirty(20, 25));
 
             //Using Void and Calling from Inside / outside the Function  / Scope Methods
-            var sum = Add2(10, 5); // Call Method from Outside Function
-            Debug.WriteLine(sum);
+            var Addition = Add2(10, 5); // Call Method from Outside Function
+            Debug.WriteLine(Addition);
 
             Add(10, 10); // Call Method from Inside Function
 
             var sub = Sub(a, b); // Call Variables from outside of Function, From the Class
             Debug.WriteLine(sub);
+            
             
         }
         public static int Sub(int a, int b)

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCSharpAtWorkDuringBreakandLunch", "LearningCSharpAtWorkDuringBreakandLunch.csproj", "{880947AB-EECC-4D93-882A-ED4B664699F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningCSharpAtWorkDuringBreakandLunch", "LearningCSharpAtWorkDuringBreakandLunch.csproj", "{880947AB-EECC-4D93-882A-ED4B664699F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Section2", "..\Section2\Section2.csproj", "{0D81CB56-8C3C-4F47-959D-97500BBD6051}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{880947AB-EECC-4D93-882A-ED4B664699F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{880947AB-EECC-4D93-882A-ED4B664699F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{880947AB-EECC-4D93-882A-ED4B664699F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D81CB56-8C3C-4F47-959D-97500BBD6051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D81CB56-8C3C-4F47-959D-97500BBD6051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D81CB56-8C3C-4F47-959D-97500BBD6051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D81CB56-8C3C-4F47-959D-97500BBD6051}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
