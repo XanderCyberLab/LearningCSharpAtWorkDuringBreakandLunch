@@ -12,7 +12,7 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
         static int a = 30, b = 25; //Scope through out the Algorithms Class
        
   
-        private static void Main(string[] args)
+        private static void MainAlgo(string[] args)
         {
             //Question 1
             //Debug.WriteLine(SumTwoPractice(10, 20));

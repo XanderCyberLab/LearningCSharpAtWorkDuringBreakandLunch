@@ -5,35 +5,58 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 
-namespace LearningCSharpAtWorkDuringBreakandLunch
+namespace LearningCSharpAtWorkDuringBreakandLunch.Classes
 {
     class Program
-
     {
-        static void Printmessage(string message = "Hello World")
+        static void Main(string[] args)
         {
-            System.Diagnostics.Debug.WriteLine(message);
-        }
-      
-        public static void Main1(string[] args)
-        {
+            //Console.WriteLine(SimpleMath.Addition(321.3f, 123.5f));
+
+
+            BankAccount bankAccount1 = new BankAccount(10f, "Alexander"); //Creating a instance of a class. Define a object
+            Console.WriteLine(bankAccount1.Balance);
+
+            BankAccount bankAccount2 = new BankAccount(1000f, "Mashire");
+
+            BankAccount bankAccount3 = new BankAccount(10000f, "Kyohei");
+
+            ChildBankAccount childBankAccount1 = new ChildBankAccount(10f, "Alexis Juvia", "Mashire"); 
             
-            //Printmessage();
-            //Printmessage("Hello Texas");      
+            //bankAccount1.balance = bankAccount1.AddBalance(100f);
+
+            //Console.WriteLine(bankAccount1.balance);
+            Console.WriteLine(bankAccount1.AddBalance(-100f, true));
+            Console.WriteLine(bankAccount2.AddBalance(1000f));
+            Console.WriteLine(childBankAccount1.AddBalance(1000f));
+
+            //bankAccount1.balance = bankAccount1.WithdrawnBalance(90f);
+
+            //Console.WriteLine("$90 withdrawn from " + bankAccount1.owner +"'s bank account. Remaining Balance: " + bankAccount1.balance);
+            //Console.WriteLine(bankAccount1.WithdrawnBalance(90f));
+            Console.ReadLine(); //TestTest
+
         }
+    }
 
-
-        private static void UserProfile()
+    class SimpleMath
+    {
+        public static float Addition(float a1, float a2)
         {
-            Console.WriteLine("Please enter your name.");
-            string userName = Console.ReadLine();
-            System.Diagnostics.Debug.WriteLine(userName);
+            return a1 + a2;
+        }
+        public static float Substract(float a1, float a2)
+        {
+            return a1 - a2;
+        }
+        public static float Multiplication(float a1, float a2)
+        {
+            return a1 * a2;
+        }
+        public static float Division(float a1, float a2)
+        {
+            return a1 / a2;
         }
 
-        //Console.WriteLine("Enter first digit?");
-        //    string firstNum = Console.ReadLine();
-        //Console.WriteLine("Enter second digit?");
-        //    string secondNum = Console.ReadLine();
-        //Console.WriteLine("You two numbers are " + firstNum);
     }
 }
