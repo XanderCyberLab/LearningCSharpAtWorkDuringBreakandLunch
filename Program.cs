@@ -9,7 +9,7 @@ namespace LearningCSharpAtWorkDuringBreakandLunch.Classes
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main101(string[] args)
         {
             //Console.WriteLine(SimpleMath.Addition(321.3f, 123.5f));
 
@@ -37,26 +37,5 @@ namespace LearningCSharpAtWorkDuringBreakandLunch.Classes
             Console.ReadLine(); //TestTest
 
         }
-    }
-
-    class SimpleMath
-    {
-        public static float Addition(float a1, float a2)
-        {
-            return a1 + a2;
-        }
-        public static float Substract(float a1, float a2)
-        {
-            return a1 - a2;
-        }
-        public static float Multiplication(float a1, float a2)
-        {
-            return a1 * a2;
-        }
-        public static float Division(float a1, float a2)
-        {
-            return a1 / a2;
-        }
-
     }
 }

@@ -9,7 +9,7 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
 {
     class Algorithms
     {
-        static int a = 30, b = 25; //Scope through out the Algorithms Class
+        //static int a = 30, b = 25; //Scope through out the Algorithms Class
        
   
         private static void MainAlgo(string[] args)
@@ -31,23 +31,27 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
             //Debug.WriteLine(CheckTwoIntegersIfReturnTrueIfEqualsOrSumsToThirty(20, 25));
 
             //Using Void and Calling from Inside / outside the Function  / Scope Methods
-            var Addition = Add2(10, 5); // Call Method from Outside Function
-            Debug.WriteLine(Addition);
+            //var Addition = Add2(10, 5); // Call Method from Outside Function
+            //Debug.WriteLine(Addition);
 
-            Add(10, 10); // Call Method from Inside Function
+            //Add(10, 10); // Call Method from Inside Function
 
-            var sub = Sub(a, b); // Call Variables from outside of Function, From the Class
-            Debug.WriteLine(sub); //Test
-            
+            //var sub = Sub(a, b); // Call Variables from outside of Function, From the Class
+            //Debug.WriteLine(sub); //Test
+
+            //Question 4
+            //Console.WriteLine(CheckIntergerIfWithinRange(103));
+            //Console.WriteLine(CheckIntergerIfWithinRange(90));
+            //Console.WriteLine(CheckIntergerIfWithinRange(89));
+            //Console.WriteLine(CheckIntergerIfWithinRange(209));
+
+            Console.ReadLine();
             
         }
         public static int Sub(int a, int b)
         {
             return a - b;
         }
-
-
-
         public static void Add(int a, int b) // Call Method Inside
         {
             int sum = a + b;
@@ -81,8 +85,7 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
             {
                 return ((a + b) * 3);
             }*/
-        }
-        
+        }        
         public static int AbsoluteDifferenceBetweenTwoValues(int n)
             {
             /*
@@ -107,7 +110,6 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
                 return abs - n;
             }
         }
-
         public static bool CheckTwoIntegersIfReturnTrueIfEqualsOrSumsToThirty(int a, int b)
         {
 
@@ -128,7 +130,6 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
 
             return (a == c) || (b == c) || (a + b == c);        
         }
-
         public static int SumTwoPractice(int a, int b)
         {
             /*
@@ -143,7 +144,24 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
             //    return (a + b) * 3;
             //}
             //return a + b;
-        }
+        } 
+        public static bool CheckIntergerIfWithinRange(int a)
+        {
+            /*Question 4
+             * Write a C# Sharp program to check a given integer and return true if it is within 10 of 100 or 200. Go to the editor
+                Sample Input:
+                103
+                90
+                89
+             */
+            //return a <= 110 && a >= 90; //Only work One Number not Two
+            if (Math.Abs(a - 100) <= 10 || Math.Abs(a - 200) <= 10) //<-- Math.Abs learned something new!
+                return true;
+            return false;
+            
+            
+        } // Math.Abs <-- !
+
     }
 }
 
