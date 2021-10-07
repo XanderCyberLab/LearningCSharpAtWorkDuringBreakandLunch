@@ -10,7 +10,7 @@ namespace LearningCSharpAtWorkDuringBreakandLunch.Classes
     class Program
     {
         static IOperations am;
-        static void Main(string[] args)
+        static void MainLists(string[] args)
         {
 
             //Console.WriteLine(SimpleMath.Addition(321.3f, 123.5f));
