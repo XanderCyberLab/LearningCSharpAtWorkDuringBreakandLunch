@@ -9,11 +9,17 @@ namespace LearningCSharpAtWorkDuringBreakandLunch.Classes
 {
     class Program
     {
-        static void Main101(string[] args)
+        static IOperations am;
+        static void Main(string[] args)
         {
+
             //Console.WriteLine(SimpleMath.Addition(321.3f, 123.5f));
+            am = new AdvancedMath(); //Creates a new object(IOperation called outside of function
+            //AdvancedMath am = new AdvancedMath(); //Creates a new object
+            Console.WriteLine(am.Remainder(7, 3));
 
 
+            /*
             BankAccount bankAccount1 = new BankAccount(10f, "Alexander"); //Creating a instance of a class. Define a object
             Console.WriteLine(bankAccount1.Balance);
 
@@ -34,8 +40,42 @@ namespace LearningCSharpAtWorkDuringBreakandLunch.Classes
 
             //Console.WriteLine("$90 withdrawn from " + bankAccount1.owner +"'s bank account. Remaining Balance: " + bankAccount1.balance);
             //Console.WriteLine(bankAccount1.WithdrawnBalance(90f));
-            Console.ReadLine(); //TestTest
+             //TestTest
+            */
 
+            Console.ReadLine();
+        }
+    }
+    interface IOperations //It must be used in a class 
+    {
+        float Remainder(float dividend, float divisor);
+    }
+
+    class SimpleMath 
+    {
+        public static float Addition(float a1, float a2)
+        {
+            return a1 + a2;
+        }
+        public static float Substract(float a1, float a2)
+        {
+            return a1 - a2;
+        }
+        public static float Multiplication(float a1, float a2)
+        {
+            return a1 * a2;
+        }
+        public static float Division(float a1, float a2)
+        {
+            return a1 / a2;
+        }
+    }
+
+    class AdvancedMath : SimpleMath, IOperations
+    {
+        public float Remainder(float dividend, float divisor)
+        {
+            return dividend % divisor;
         }
     }
 }

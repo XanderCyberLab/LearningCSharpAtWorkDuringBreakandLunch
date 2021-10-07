@@ -8,7 +8,7 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
 {
     class Basics
     {
-        static void Main(string[] args)
+        static void MainBasics(string[] args)
         {
             Console.WriteLine("Hello");
             Console.WriteLine("Alexander Morales created of XanderToolz \"A Digital Toolbox\"");

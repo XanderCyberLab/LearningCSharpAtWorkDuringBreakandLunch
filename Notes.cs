@@ -47,7 +47,12 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
             INotifyPropertyChanged notifies us that a property value has been modified
 
 
-             */ 
+             // F1: - one digit after decimal point
+            Console.WriteLine((numDouble).ToString("F1"));
+
+
+
+             */
         }
     }
 }
