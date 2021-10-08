@@ -11,7 +11,7 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
     {
         static List<int> numbers = new List<int>() { 1, 3, 5, 7, 8, 2, 4, 6, 8 };
 
-        public static void Main(string[] args)
+        public static void MainList(string[] args)
         {
 
             numbers.Insert(0, 101);

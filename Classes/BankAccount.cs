@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 
@@ -52,7 +53,11 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
         {
             return Balance = balance - balanceToBeRemoved;
         }
-        
+        public async Task<string> GetData()
+        {
+            Thread.Sleep(2000);
+            return "Completed";
+        }
     }
 
     public class ChildBankAccount : BankAccount
@@ -77,5 +82,7 @@ namespace LearningCSharpAtWorkDuringBreakandLunch
             return Balance;
 
         }
+
+
     }
 }
